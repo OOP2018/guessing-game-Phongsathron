@@ -28,10 +28,10 @@ public class GameSolver {
             boolean result = game.guess(guess_num);
             System.out.println("Answer: "+guess_num+"\n"+game.getMessage());
             if(!result){
-                if(game.getMessage().equals("too large")){
+                if(game.getMessage().equals("It Large!!")){
                     max = guess_num;
                 }
-                else if(game.getMessage().equals("too small")){
+                else if(game.getMessage().equals("Small!!")){
                     min = guess_num;
                 }
             }

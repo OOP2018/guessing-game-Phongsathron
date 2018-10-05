@@ -22,7 +22,7 @@ public class GameDialog {
             
             if(!game.guess(guessNum)){
                 type = JOptionPane.WARNING_MESSAGE;
-                JOptionPane.showMessageDialog(null, game.getMessage(), title, type);
+                JOptionPane.showConfirmDialog(null, game.getMessage() + "\nPlay again!", title, type);
             }
             else{
                 break;
@@ -34,6 +34,13 @@ public class GameDialog {
         
         type = JOptionPane.INFORMATION_MESSAGE;
         JOptionPane.showMessageDialog(null, description, title, type);
+        
+        type = JOptionPane.YES_NO_OPTION;
+        int again = JOptionPane.showConfirmDialog(null, "Play again!", title, type);
+        if(again == JOptionPane.YES_OPTION){
+            this.play(game);
+        }
+        
         return guessNum;
     }
 }
