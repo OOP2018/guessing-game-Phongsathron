@@ -20,6 +20,8 @@ nbproject
 nbbuild/
 nbdist/
 nb-configuration.xml
+build.xml
+manifest.mf
 
 # IntelliJ project files
 .idea/
