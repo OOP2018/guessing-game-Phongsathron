@@ -11,8 +11,8 @@ import java.util.Random;
  * @author phongsathron
  */
 public class PhongsathronGame extends NumberGame {
-    private int upperBound;
-    private int secret;
+    private final int upperBound;
+    private final int secret;
     private int count = 0;
     
     public PhongsathronGame(int upperBound){
